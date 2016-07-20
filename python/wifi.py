@@ -8,7 +8,7 @@ ap_if.active(False)
 sta_if.active(True)
 
 while not sta_if.isconnected():
-  sta_if = connect('FailtehAP', '1234567890')
-  time.sleep(5)
+	sta_if.connect('ssid', 'password')
+	time.sleep(5)
 
-print(sta_if.ifconfig())
+	print(sta_if.ifconfig())
